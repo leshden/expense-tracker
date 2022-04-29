@@ -15,7 +15,7 @@ const AddTransaction = () => {
   return(
     <div>
       <h3>Добавить новую транзакцию</h3>
-      <from>
+      <form>
         <div className='from-control'>
           <label htmlFor='text'>Текст</label>
           <input type='text' value={text} onChange={onChangeText} placeholder='Введите текст...' />
@@ -25,7 +25,7 @@ const AddTransaction = () => {
           <input type='number'  value={amount} onChange={onChangeAmount} placeholder='Введите сумму...' />
         </div>
         <button className='btn'>Добавить транзакцию</button>
-      </from>
+      </form>
     </div>
   );
 };
